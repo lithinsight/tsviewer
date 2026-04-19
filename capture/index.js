@@ -1,0 +1,1 @@
+export { OpenSeadragonScreenshot, createScreenshot } from './capture.js';

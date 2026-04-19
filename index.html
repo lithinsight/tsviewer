@@ -1,0 +1,47 @@
+<head>
+    <title>GeoTIFFTileSource Demo (OpenSeadragon v4)</title>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/openseadragon@6.0.2/build/openseadragon/openseadragon.min.js"></script>
+    <script src="./openseadragon-scalebar.js"></script>
+
+
+    <link rel="stylesheet" href="./demo.css">
+
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./demo.js"></script>
+    <meta charset="UTF-8">
+ </head>
+ <body>
+     <div class="content">
+         <div class="demo">
+           <img src="logo.png" width="300">
+            <h2>Thin Section viewer by LithInsight</h2>
+            <p>
+                Source code can be found at the project <a href="https://github.com/pearcetm/GeoTIFFTileSource">GitHub Repository</a>.
+                This viewer uses <a href="https://openseadragon.github.io/"> OpenSeaDragon</a> <a href="https://github.com/pearcetm/GeoTIFFTileSource"> GeoTIFFTileSource</a> , <a href="https://github.com/locomo/openseadragon-curtain-sync">OpenSeadragon CurtainSync</a> and <a href="https://github.com/usnistgov/OpenSeadragonScalebar">OpenSeaDragon-Scalebar</a>.
+            </p>
+            <h3>View local tiff files of whole slide images</h3>
+
+            <p>
+                Whole slide images provided by Lithinsight are aligned, scaled and pyramid enabled to allow efficient viewing below. Select all files (eg PPL, XPL, RL) for the slide you wish to view
+            </p>
+
+
+            <h3>Usage Notes:</h3>
+             <p>Choose file(s) for the thin section you wish to view. After loading, image visibility can be toggled using checkboxes. If more than one image is selected, the viewer will use curtain mode to allow interactive cursor switching between images. Images of the current viewport with scale can be downloaded as .PNG with the capture button or pressing "p" on the keyboard</p>
+            <div><input type='file' id="file-picker" multiple /></div>
+             <div id="image-toggles" style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:0.5rem;"></div>
+            <button id="capture-btn" disabled>Capture (or press p)</button>
+
+             <div id="viewer" class="viewer"></div>
+             <div>
+                <div id="file-info">
+                    <h4 id="filename">Please select an image file or link</h4>
+                    <div id="associated-images" style="display:flex;flex-direction:row;"></div>
+                    <h4>Image Description</h4>
+                    <div id="image-description" class="image-details"></div>
+                </div>
+             </div>
+         </div>
+     </div>
+
+ </body>
