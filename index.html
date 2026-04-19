@@ -1,9 +1,9 @@
 <head>
-    <title>GeoTIFFTileSource Demo (OpenSeadragon v4)</title>
+    <title>LithInsight Thin Section Viewer</title>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/openseadragon@6.0.2/build/openseadragon/openseadragon.min.js"></script>
     <script src="./openseadragon-scalebar.js"></script>
 
-
+    <link rel="icon" type="image/png" href="/Dark%20Blue.png">
     <link rel="stylesheet" href="./demo.css">
 
     <script type="module" src="./main.js"></script>
@@ -13,8 +13,8 @@
  <body>
      <div class="content">
          <div class="demo">
-           <a href="www.lithinsight.com.au"> <img src="logo.png" width="300"> </a>
-            <h2>Thin Section Viewer by <a href="www.lithinsight.com.au">LithInsight</h2>
+           <a href="www.lithinsight.com.au"> <img src="logo.png" width="300" height="150"> </a>
+            <h2>Thin Section Viewer by <a href="www.lithinsight.com.au">LithInsight</a></h2>
             <p>
                 Source code can be found at the project <a href="https://github.com/lithinsight/tsviewer">GitHub Repository</a>.
                 This viewer uses <a href="https://openseadragon.github.io/"> OpenSeaDragon</a> <a href="https://github.com/pearcetm/GeoTIFFTileSource"> GeoTIFFTileSource</a> , <a href="https://github.com/locomo/openseadragon-curtain-sync">OpenSeadragon CurtainSync</a> and <a href="https://github.com/usnistgov/OpenSeadragonScalebar">OpenSeaDragon-Scalebar</a>.
@@ -24,7 +24,6 @@
             <p>
                 Whole slide images provided by Lithinsight are aligned, scaled and pyramid enabled to allow efficient viewing below. Select all files (eg PPL, XPL, RL) for the slide you wish to view
             </p>
-
 
             <h3>Usage Notes:</h3>
              <p>Choose file(s) for the thin section you wish to view. After loading, image visibility can be toggled using checkboxes. If more than one image is selected, the viewer will use curtain mode to allow interactive cursor switching between images. Images of the current viewport with scale can be downloaded as .PNG with the capture button or pressing "p" on the keyboard</p>
